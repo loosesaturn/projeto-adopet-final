@@ -31,7 +31,7 @@ $page_title = 'Página de Relatórios';
 
             <ul>
                 <li><a href="relatorio_animais_ong.php">Relatório de animais por ONG</a></li>
-                <li><a href="relatorio_animais_especie.php">Relatório de animais por espécie</a></li>
+                <li><a href="relatorio_animais_especie.php">Relatório de animais por responsável</a></li>
                 <li><a href="relatorio_animais_mais_tempo.php">Relatório de animais esperando há mais tempo</a></li>
                 <li><a href="relatorio_animais_nao_castrados.php">Relatório de animais pendentes de castração</a></li>
             </ul>

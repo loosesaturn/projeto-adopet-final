@@ -113,7 +113,13 @@ $conn->close();
             <p><strong>Descrição da ONG:</strong> <?php echo htmlspecialchars($perfil_usuario['descricao'] ?: 'Não informada'); ?></p>
         <?php endif; ?>
         <a href="editar_perfil.php" class="btn-secondary">Editar Perfil</a>
-    </div>
+            <form action="excluir_usuario.php" method="POST" style="display:inline-block; margin-left: 10px;"
+            onsubmit="return confirm('ATENÇÃO: Você tem certeza que deseja excluir sua conta? Esta ação é irreversível e apagará seus dados e animais cadastrados (dependendo das regras do banco).');">
+            
+            <input type="hidden" name="id_usuario" value="<?php echo $user_id; ?>">
+            <button type="submit" class="btn-danger btn-secondary">Excluir Conta</button>
+        </form>
+    </div>         
 
     <?php if ($user_type == 'ONG' || $user_type == 'Pessoa Fisica'): ?>
         <hr>
